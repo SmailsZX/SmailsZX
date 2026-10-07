@@ -1,162 +1,266 @@
-# Андрей Макаров
+<div align="center">
 
-**Python Backend / AI Developer** · Иркутск (UTC+8) · Junior+
+# 👋 Привет, я Андрей Макаров
 
-Разрабатываю backend-сервисы на Python: асинхронные очереди, REST API, 
-RAG-пайплайны. Фокус — отказоустойчивость, наблюдаемость и тесты. 
-Активно использую AI-инструменты (Claude Code) в ежедневной работе.
+### 🐍 Python Backend / AI Developer
+
+**Иркутск (UTC+8)** · **Junior+** · **Открыт к удалёнке и гибриду**
+
+[![Telegram](https://img.shields.io/badge/Telegram-@BalumbaZX-26A5E4?logo=telegram&logoColor=white)](https://t.me/BalumbaZX)
+[![Email](https://img.shields.io/badge/Email-amak04@yandex.ru-EA4335?logo=gmail&logoColor=white)](mailto:amak04@yandex.ru)
+[![GitHub](https://img.shields.io/badge/GitHub-SmailsZX-181717?logo=github&logoColor=white)](https://github.com/SmailsZX)
+
+</div>
 
 ---
 
-## 🎯 Чем занимаюсь
+<div align="center">
 
-- **Асинхронные очереди и фоновые задачи** — Taskiq, RabbitMQ, Redis, retry, DLQ
-- **REST API на FastAPI** — SQLAlchemy 2.0, PostgreSQL, JWT, Alembic
-- **AI-агенты и RAG** — LangChain, LangGraph, Ollama, ChromaDB
-- **Инфраструктура** — Docker, CI/CD (GitHub Actions), Prometheus, Structlog
+### 💡 Разрабатываю backend-сервисы на Python
+
+Асинхронные очереди · REST API · AI-агенты и RAG
+
+**Фокус:** отказоустойчивость, наблюдаемость, тесты.
+
+</div>
 
 ---
 
 ## 🛠 Технические компетенции
 
-| Область | Технологии | Уровень |
-|---|---|---|
-| **Язык** | Python 3.12 | Expert |
-| **Web** | FastAPI, Starlette | Strong |
-| **ORM/БД** | SQLAlchemy 2.0, PostgreSQL, Redis | Strong |
-| **Очереди** | Taskiq, RabbitMQ, asyncio | Strong |
-| **AI/ML** | LangChain, LangGraph, Ollama, PyTorch | Strong |
-| **Инфра** | Docker, GitHub Actions, Linux | Strong |
-| **Наблюдаемость** | Prometheus, Structlog | Familiar |
-| **Дополнительно** | TypeScript, Next.js, Playwright | Familiar |
+<table>
+<tr>
+<td valign="top" width="50%">
+
+### 🔧 Backend
+![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?logo=fastapi&logoColor=white)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-2.0-D71F00?logo=sqlalchemy&logoColor=white)
+![Pydantic](https://img.shields.io/badge/Pydantic-v2-E92063?logo=pydantic&logoColor=white)
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-336791?logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-7-DC382D?logo=redis&logoColor=white)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-3-FF6600?logo=rabbitmq&logoColor=white)
+
+</td>
+<td valign="top" width="50%">
+
+### 🤖 AI / ML
+![LangChain](https://img.shields.io/badge/LangChain-1.x-1C3C3C?logo=langchain&logoColor=white)
+![LangGraph](https://img.shields.io/badge/LangGraph-1.x-FF6F61)
+![Ollama](https://img.shields.io/badge/Ollama-local%20LLM-000000)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.0-EE4C2C?logo=pytorch&logoColor=white)
+
+![ChromaDB](https://img.shields.io/badge/ChromaDB-vector%20db-FF6F00)
+![OpenCV](https://img.shields.io/badge/OpenCV-4.x-5C3EE8?logo=opencv&logoColor=white)
+
+</td>
+</tr>
+<tr>
+<td valign="top" width="50%">
+
+### ⚙️ Инфраструктура
+![Docker](https://img.shields.io/badge/Docker-24-2496ED?logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI%2FCD-2088FF?logo=githubactions&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-Ubuntu-E95420?logo=linux&logoColor=white)
+
+![Prometheus](https://img.shields.io/badge/Prometheus-metrics-E6522C?logo=prometheus&logoColor=white)
+![Structlog](https://img.shields.io/badge/Structlog-structured%20logs-2C3E50)
+
+</td>
+<td valign="top" width="50%">
+
+### 🎨 Дополнительно
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-15-000000?logo=nextdotjs&logoColor=white)
+![Playwright](https://img.shields.io/badge/Playwright-E2E-2EAD33?logo=playwright&logoColor=white)
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🚀 Избранные проекты
 
-### [async-task-queue](https://github.com/SmailsZX/async-task-queue) — распределённая очередь задач
+<table>
+<tr>
+<td width="50%" valign="top">
 
-**Проблема:** нужен отказоустойчивый обработчик фоновых задач, который 
-не теряет задачи при падении воркеров и не дублирует side effects.
+### 📦 [async-task-queue](https://github.com/SmailsZX/async-task-queue)
 
-**Решение:** FastAPI принимает задачи через REST → Taskiq кладёт их в 
-RabbitMQ → N воркеров обрабатывают параллельно на asyncio → статусы 
-хранятся в PostgreSQL (персистентно), результаты — в Redis.
+> Распределённая очередь фоновых задач с отказоустойчивостью
 
-**Что реализовано:**
-- Retry с экспоненциальной задержкой + Dead Letter Queue для упавших задач
-- Timeout через `TASK_TIMEOUT` — защита от зависших воркеров
-- Защита от гонки при отмене задачи (флаг `cancelled` читается из PostgreSQL, не из Redis)
-- Prometheus-метрики: статусы, latency, retry count, DLQ size
-- Structlog — структурированные логи с request_id
-- Rate limiting на Redis (100 req/min на API)
+**Что решает:** обработка фоновых задач без потерь при падении воркеров
 
-**Что осознанно не реализовано:** idempotency key для внешних side effects. 
-Понимаю, что для production с send_email/HTTP нужен outbox pattern + 
-идемпотентный получатель, или manual ack. Текущая конфигурация — at-least-once 
-(Taskiq `WHEN_EXECUTED`), защита от дублей — на стороне получателя.
+**Реализовано:**
+- ✅ Retry с экспоненциальной задержкой
+- ✅ Dead Letter Queue (`tasks.dlq`)
+- ✅ Timeout через `TASK_TIMEOUT`
+- ✅ Prometheus-метрики (статусы, latency, retry count)
+- ✅ Rate limiting на Redis
 
-**Стек:** FastAPI, asyncio, Taskiq, RabbitMQ, Redis, PostgreSQL, SQLAlchemy 2.0, Alembic, Prometheus, Structlog, Docker  
-**40 тестов · CI/CD · Docker Compose (6 сервисов)**
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![Taskiq](https://img.shields.io/badge/Taskiq-FF6F61)
+![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?logo=rabbitmq&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)
 
----
+**`40 тестов`** · **`CI/CD`** · **`Docker`**
 
-### [chutye-quotes](https://github.com/SmailsZX/chutye-quotes) — in-memory витрина с оптимизацией памяти
+</td>
+<td width="50%" valign="top">
 
-**Проблема:** сервис должен принимать снимок каталога до 340 000 записей 
-(до 110 МБ) раз в несколько минут, укладываясь в лимит 256 МБ памяти 
-и 0.5 CPU, при этом держать копию каталога локально.
+### 🧠 [chutye-quotes](https://github.com/SmailsZX/chutye-quotes)
 
-**Решение:** FastAPI-сервис с in-memory хранилищем, потоковым парсером 
-и circuit breaker для защиты каталога.
+> In-memory витрина с оптимизацией памяти
 
-**Что реализовано:**
-- **Оптимизация памяти:** 146 MiB вместо 237 MiB на 340 000 записей (–38%) 
-  за счёт хранения JSON-строк в `OrderedDict` вместо Python-словарей
-- **Потоковый парсер:** снимок до 110 МБ разбирается по чанкам без 
-  загрузки тела целиком в память. Инкрементальный UTF-8 декодер для 
-  многобайтных символов на границах чанков
-- **Двухфазный импорт:** `begin_snapshot` → `insert_from_snapshot` → 
-  `finish_snapshot` с `rollback_snapshot` при ошибке — POST с мусором 
-  не теряет данные
-- **Circuit breaker** для каталога + уважение `Retry-After` при `503`
-- **LRU-эвикция** с TTL и учётом реального размера JSON-строк
+**Что решает:** приём снимка 340k записей (110 МБ) при лимите 256 МБ
 
-**Стек:** Python 3.12, FastAPI, httpx, orjson  
-**50 тестов · CI/CD · Docker (memory=256m, cpus=0.5)**
+**Реализовано:**
+- ✅ Хранение JSON-строк: **146 MiB вместо 237 MiB (–38%)**
+- ✅ Потоковый парсер до 110 МБ без загрузки в память
+- ✅ Двухфазный импорт с rollback
+- ✅ Circuit breaker + `Retry-After`
+- ✅ LRU-эвикция с TTL
 
----
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![httpx](https://img.shields.io/badge/httpx-3.x-2C3E50)
+![orjson](https://img.shields.io/badge/orjson-fast-FF6F00)
 
-### [task-tracker-api](https://github.com/SmailsZX/task-tracker-api) — REST API с JWT
+**`50 тестов`** · **`CI/CD`** · **`Docker`**
 
-**Стек:** FastAPI 0.115, SQLAlchemy 2.0 (typed Mapped API), PostgreSQL 16, 
-Alembic, JWT (python-jose) + bcrypt, Pydantic v2  
-**13 тестов · CI/CD · Docker**
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-5 эндпоинтов: регистрация, логин, CRUD задач, смена статуса, фильтрация. 
-Пароли — bcrypt (не sha256). JWT с `sub` и `exp`. Каждый видит только свои задачи.
+### ✅ [task-tracker-api](https://github.com/SmailsZX/task-tracker-api)
 
----
+> REST API с JWT-авторизацией и CRUD
 
-### [rag-telegram-bot](https://github.com/SmailsZX/rag-telegram-bot) — RAG без облака
+**Реализовано:**
+- ✅ JWT (access + refresh) + bcrypt
+- ✅ SQLAlchemy 2.0 typed Mapped API
+- ✅ Alembic-миграции
+- ✅ Каждый пользователь видит только свои задачи
 
-Telegram-бот с RAG-пайплайном на локальной LLM. Данные не уходят в облако.
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?logo=sqlalchemy&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?logo=jsonwebtokens&logoColor=white)
 
-**Стек:** aiogram 3.15, LangChain 0.3, ChromaDB 0.5, Ollama (Qwen2.5 7B), 
-pypdf, SQLite  
-**10 тестов · CI/CD · Docker**
+**`13 тестов`** · **`CI/CD`** · **`Docker`**
 
-Пайплайн: PDF → чанки (1000 символов, overlap 200) → эмбеддинги 
-`nomic-embed-text` → ChromaDB → top-3 поиск → Qwen2.5 → ответ. 
-Системный промпт с grounding и защитой от галлюцинаций.
+</td>
+<td width="50%" valign="top">
 
----
+### 💬 [rag-telegram-bot](https://github.com/SmailsZX/rag-telegram-bot)
 
-### [ai-agent-langchain](https://github.com/SmailsZX/ai-agent-langchain) — ReAct-агент
+> RAG на локальной LLM — без облака
 
-ReAct-агент на LangGraph с tool use (калькулятор, погода, RAG-поиск). 
-Работает полностью локально.
+**Что решает:** ответы по документам без отправки данных наружу
 
-**Стек:** LangChain 1.x, LangGraph 1.x, Streamlit, Ollama (Qwen2.5 7B)  
-**9 тестов · CI/CD**
+**Пайплайн:** PDF → чанки → эмбеддинги → ChromaDB → top-3 → Qwen2.5
 
-LLM сам решает, какой инструмент вызвать, комбинирует шаги рассуждения 
-и действия. Погода — через OpenWeatherMap API (опционально).
+![aiogram](https://img.shields.io/badge/aiogram-3.15-2CA5E0?logo=telegram&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?logo=langchain&logoColor=white)
+![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6F00)
+![Ollama](https://img.shields.io/badge/Ollama-000000)
 
----
+**`10 тестов`** · **`CI/CD`** · **`Docker`**
 
-### [thermal-diagnosis](https://github.com/SmailsZX/thermal-diagnosis) — нейросетевая диагностика
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-Диагностика электрооборудования по термограммам. Три класса: 
-НОРМА / ПЕРЕГРЕВ / НЕИСПРАВНОСТЬ.
+### 🤖 [ai-agent-langchain](https://github.com/SmailsZX/ai-agent-langchain)
 
-**Стек:** PyTorch, OpenCV, scikit-learn  
-**14 тестов · CI/CD · Docker**  
-**Точность: ~85–90%** на валидации
+> ReAct-агент на LangGraph с tool use
+
+**Что делает:** LLM сам решает, какой инструмент вызвать
+
+**Инструменты:** калькулятор · погода · RAG-поиск
+
+![LangGraph](https://img.shields.io/badge/LangGraph-FF6F61)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?logo=langchain&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
+![Ollama](https://img.shields.io/badge/Ollama-000000)
+
+**`9 тестов`** · **`CI/CD`**
+
+</td>
+<td width="50%" valign="top">
+
+### 🔍 [thermal-diagnosis](https://github.com/SmailsZX/thermal-diagnosis)
+
+> Нейросетевая диагностика электрооборудования
+
+**Что делает:** классификация термограмм — НОРМА / ПЕРЕГРЕВ / НЕИСПРАВНОСТЬ
+
+**Точность:** ~85–90% на валидации
+
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
+
+**`14 тестов`** · **`CI/CD`** · **`Docker`**
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🔧 Open Source
 
-- **[hololinked](https://github.com/hololinked-dev/hololinked/pull/191)** — 
-  PR #191: поддержка docstring под определением Property. 
-  AST-парсер в `ThingMeta`, заполняет `Property.doc` только если 
-  он не задан явно. Graceful fallback для REPL/ноутбуков. 4 теста.
+<div align="center">
+
+### 🌿 [hololinked](https://github.com/hololinked-dev/hololinked/pull/191) — PR #191
+
+**Поддержка docstring под определением Property**
+
+AST-парсер в `ThingMeta` заполняет `Property.doc` из строкового литерала, 
+стоящего сразу после определения. Explicit `doc="..."` имеет приоритет. 
+Graceful fallback для REPL/ноутбуков. 4 теста.
+
+[![PR #191](https://img.shields.io/badge/PR%20%23191-open-yellow?logo=github)](https://github.com/hololinked-dev/hololinked/pull/191)
+
+</div>
 
 ---
 
 ## 📊 GitHub Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=SmailsZX&show_icons=true&theme=default&hide_border=true&include_all_commits=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=SmailsZX&layout=compact&hide_border=true)
+<div align="center">
+
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=SmailsZX&show_icons=true&theme=default&hide_border=true&include_all_commits=true&count_private=true" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=SmailsZX&layout=compact&hide_border=true&langs_count=8" />
+
+</div>
 
 ---
 
-## 📫 Контакты
+<div align="center">
 
-- **Email:** amak04@yandex.ru
-- **Telegram:** [@BalumbaZX](https://t.me/BalumbaZX)
-- **GitHub:** [github.com/SmailsZX](https://github.com/SmailsZX)
+## 📫 Связаться со мной
 
-Открыт к предложениям **Python Backend / AI Developer** (Junior+ / Middle), 
-удалённо или гибрид.
+[![Telegram](https://img.shields.io/badge/Telegram-@BalumbaZX-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/BalumbaZX)
+[![Email](https://img.shields.io/badge/Email-amak04@yandex.ru-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:amak04@yandex.ru)
+[![GitHub](https://img.shields.io/badge/GitHub-SmailsZX-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SmailsZX)
+
+---
+
+### 💼 Открыт к предложениям
+
+**Python Backend / AI Developer** (Junior+ / Middle)
+
+Удалённо · Гибрид · Релокация
+
+</div>
+
+---
+
+<div align="center">
+<sub>⭐ Если мои проекты полезны — поставь звезду!</sub>
+</div>
