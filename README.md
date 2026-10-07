@@ -1,6 +1,6 @@
 # Привет, я Андрей 👋
 
-**Python Backend / AI Developer** — Junior+, Иркутск (UTC+8).
+**Python Backend / AI Developer** — Junior+.
 
 Разрабатываю backend-сервисы на **Python + FastAPI + PostgreSQL**, 
 строю **AI-агентов на LangChain / LangGraph**, активно использую 
