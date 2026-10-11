@@ -1,10 +1,10 @@
 <div align="center">
 
-# 👋 Привет, я Андрей Макаров
+# 👋 Hi, I'm Andrey Makarov
 
 ### 🐍 Python Backend / AI Developer
 
-**Иркутск (UTC+8)** · **Junior+** · **Открыт к удалёнке и гибриду**
+**Irkutsk (UTC+8)** · **Junior+** · **Open to remote and hybrid**
 
 [![Telegram](https://img.shields.io/badge/Telegram-@BalumbaZX-26A5E4?logo=telegram&logoColor=white)](https://t.me/BalumbaZX)
 [![Email](https://img.shields.io/badge/Email-amak04@yandex.ru-EA4335?logo=gmail&logoColor=white)](mailto:amak04@yandex.ru)
@@ -16,17 +16,17 @@
 
 <div align="center">
 
-### 💡 Разрабатываю backend-сервисы на Python
+### 💡 Building backend services in Python
 
-Асинхронные очереди · REST API · AI-агенты и RAG
+Async task queues · REST APIs · AI agents and RAG
 
-**Фокус:** отказоустойчивость, наблюдаемость, тесты.
+**Focus:** reliability, observability, tests.
 
 </div>
 
 ---
 
-## 🛠 Технические компетенции
+## 🛠 Technical Stack
 
 <table>
 <tr>
@@ -41,6 +41,7 @@
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-336791?logo=postgresql&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-7-DC382D?logo=redis&logoColor=white)
 ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-3-FF6600?logo=rabbitmq&logoColor=white)
+![MQTT](https://img.shields.io/badge/MQTT-3.1.1%20%7C%205.0-660066?logo=mqtt&logoColor=white)
 
 </td>
 <td valign="top" width="50%">
@@ -59,7 +60,7 @@
 <tr>
 <td valign="top" width="50%">
 
-### ⚙️ Инфраструктура
+### ⚙️ Infrastructure
 ![Docker](https://img.shields.io/badge/Docker-24-2496ED?logo=docker&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-CI%2FCD-2088FF?logo=githubactions&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-Ubuntu-E95420?logo=linux&logoColor=white)
@@ -70,7 +71,7 @@
 </td>
 <td valign="top" width="50%">
 
-### 🎨 Дополнительно
+### 🎨 Additional
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)
 ![Next.js](https://img.shields.io/badge/Next.js-15-000000?logo=nextdotjs&logoColor=white)
 ![Playwright](https://img.shields.io/badge/Playwright-E2E-2EAD33?logo=playwright&logoColor=white)
@@ -81,7 +82,7 @@
 
 ---
 
-## 🚀 Избранные проекты
+## 🚀 Featured Projects
 
 <table>
 <tr>
@@ -89,45 +90,45 @@
 
 ### 📦 [async-task-queue](https://github.com/SmailsZX/async-task-queue)
 
-> Распределённая очередь фоновых задач с отказоустойчивостью
+> Distributed background task queue with fault tolerance
 
-**Что решает:** обработка фоновых задач без потерь при падении воркеров
+**Problem:** reliable background job processing without losing tasks on worker crashes
 
-**Реализовано:**
-- ✅ Retry с экспоненциальной задержкой
+**Implemented:**
+- ✅ Retry with exponential backoff
 - ✅ Dead Letter Queue (`tasks.dlq`)
-- ✅ Timeout через `TASK_TIMEOUT`
-- ✅ Prometheus-метрики (статусы, latency, retry count)
-- ✅ Rate limiting на Redis
+- ✅ Timeout via `TASK_TIMEOUT`
+- ✅ Prometheus metrics (statuses, latency, retry count)
+- ✅ Rate limiting on Redis
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
 ![Taskiq](https://img.shields.io/badge/Taskiq-FF6F61)
 ![RabbitMQ](https://img.shields.io/badge/RabbitMQ-FF6600?logo=rabbitmq&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)
 
-**`40 тестов`** · **`CI/CD`** · **`Docker`**
+**`40 tests`** · **`CI/CD`** · **`Docker`**
 
 </td>
 <td width="50%" valign="top">
 
 ### 🧠 [chutye-quotes](https://github.com/SmailsZX/chutye-quotes)
 
-> In-memory витрина с оптимизацией памяти
+> In-memory store with memory optimization
 
-**Что решает:** приём снимка 340k записей (110 МБ) при лимите 256 МБ
+**Problem:** ingesting a 340k-record snapshot (110 MB) under a 256 MB memory limit
 
-**Реализовано:**
-- ✅ Хранение JSON-строк: **146 MiB вместо 237 MiB (–38%)**
-- ✅ Потоковый парсер до 110 МБ без загрузки в память
-- ✅ Двухфазный импорт с rollback
+**Implemented:**
+- ✅ JSON-string storage: **146 MiB instead of 237 MiB (–38%)**
+- ✅ Streaming parser for 110 MB without loading into memory
+- ✅ Two-phase import with rollback
 - ✅ Circuit breaker + `Retry-After`
-- ✅ LRU-эвикция с TTL
+- ✅ LRU eviction with TTL
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
 ![httpx](https://img.shields.io/badge/httpx-3.x-2C3E50)
 ![orjson](https://img.shields.io/badge/orjson-fast-FF6F00)
 
-**`50 тестов`** · **`CI/CD`** · **`Docker`**
+**`50 tests`** · **`CI/CD`** · **`Docker`**
 
 </td>
 </tr>
@@ -136,38 +137,38 @@
 
 ### ✅ [task-tracker-api](https://github.com/SmailsZX/task-tracker-api)
 
-> REST API с JWT-авторизацией и CRUD
+> REST API with JWT auth and CRUD
 
-**Реализовано:**
+**Implemented:**
 - ✅ JWT (access + refresh) + bcrypt
 - ✅ SQLAlchemy 2.0 typed Mapped API
-- ✅ Alembic-миграции
-- ✅ Каждый пользователь видит только свои задачи
+- ✅ Alembic migrations
+- ✅ Each user sees only their own tasks
 
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
 ![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-D71F00?logo=sqlalchemy&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?logo=postgresql&logoColor=white)
 ![JWT](https://img.shields.io/badge/JWT-000000?logo=jsonwebtokens&logoColor=white)
 
-**`13 тестов`** · **`CI/CD`** · **`Docker`**
+**`13 tests`** · **`CI/CD`** · **`Docker`**
 
 </td>
 <td width="50%" valign="top">
 
 ### 💬 [rag-telegram-bot](https://github.com/SmailsZX/rag-telegram-bot)
 
-> RAG на локальной LLM — без облака
+> Local RAG pipeline — no cloud
 
-**Что решает:** ответы по документам без отправки данных наружу
+**Problem:** answering questions from documents without sending data outside
 
-**Пайплайн:** PDF → чанки → эмбеддинги → ChromaDB → top-3 → Qwen2.5
+**Pipeline:** PDF → chunks → embeddings → ChromaDB → top-3 → Qwen2.5
 
 ![aiogram](https://img.shields.io/badge/aiogram-3.15-2CA5E0?logo=telegram&logoColor=white)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?logo=langchain&logoColor=white)
 ![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6F00)
 ![Ollama](https://img.shields.io/badge/Ollama-000000)
 
-**`10 тестов`** · **`CI/CD`** · **`Docker`**
+**`10 tests`** · **`CI/CD`** · **`Docker`**
 
 </td>
 </tr>
@@ -176,35 +177,35 @@
 
 ### 🤖 [ai-agent-langchain](https://github.com/SmailsZX/ai-agent-langchain)
 
-> ReAct-агент на LangGraph с tool use
+> ReAct agent on LangGraph with tool use
 
-**Что делает:** LLM сам решает, какой инструмент вызвать
+**What it does:** the LLM decides which tool to call
 
-**Инструменты:** калькулятор · погода · RAG-поиск
+**Tools:** calculator · weather · RAG search
 
 ![LangGraph](https://img.shields.io/badge/LangGraph-FF6F61)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?logo=langchain&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)
 ![Ollama](https://img.shields.io/badge/Ollama-000000)
 
-**`9 тестов`** · **`CI/CD`**
+**`9 tests`** · **`CI/CD`**
 
 </td>
 <td width="50%" valign="top">
 
 ### 🔍 [thermal-diagnosis](https://github.com/SmailsZX/thermal-diagnosis)
 
-> Нейросетевая диагностика электрооборудования
+> Neural diagnostics for electrical equipment
 
-**Что делает:** классификация термограмм — НОРМА / ПЕРЕГРЕВ / НЕИСПРАВНОСТЬ
+**What it does:** thermal image classification — NORMAL / OVERHEAT / FAULT
 
-**Точность:** ~85–90% на валидации
+**Accuracy:** ~85–90% on validation
 
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?logo=pytorch&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?logo=opencv&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?logo=scikitlearn&logoColor=white)
 
-**`14 тестов`** · **`CI/CD`** · **`Docker`**
+**`14 tests`** · **`CI/CD`** · **`Docker`**
 
 </td>
 </tr>
@@ -216,15 +217,22 @@
 
 <div align="center">
 
-### 🌿 [hololinked](https://github.com/hololinked-dev/hololinked/pull/191) — PR #191
+### 🌿 [hololinked](https://github.com/hololinked-dev/hololinked) — Collaborator
 
-**Поддержка docstring под определением Property**
+**Python framework for data acquisition and IoT**
 
-AST-парсер в `ThingMeta` заполняет `Property.doc` из строкового литерала, 
-стоящего сразу после определения. Explicit `doc="..."` имеет приоритет. 
-Graceful fallback для REPL/ноутбуков. 4 теста.
+- **[PR #191](https://github.com/hololinked-dev/hololinked/pull/191)** (merged): 
+  attribute docstrings below property definitions — AST parser in `ThingMeta`. 
+  Explicit `doc="..."` wins; graceful fallback for REPL/notebooks. 4 tests.
 
-[![PR #191](https://img.shields.io/badge/PR%20%23191-open-yellow?logo=github)](https://github.com/hololinked-dev/hololinked/pull/191)
+- **[PR #200](https://github.com/hololinked-dev/hololinked/pull/200)** (merged): 
+  MQTT WebSocket transport for publisher and consumer. TLS-enabled WebSocket 
+  listener, `wss://` / `ws://` TD forms. 2 e2e tests.
+
+Both merged into `main` and included in the **v0.4.1** release.
+
+[![PR #191](https://img.shields.io/badge/PR%20%23191-merged-brightgreen?logo=github)](https://github.com/hololinked-dev/hololinked/pull/191)
+[![PR #200](https://img.shields.io/badge/PR%20%23200-merged-brightgreen?logo=github)](https://github.com/hololinked-dev/hololinked/pull/200)
 
 </div>
 
@@ -243,7 +251,7 @@ Graceful fallback для REPL/ноутбуков. 4 теста.
 
 <div align="center">
 
-## 📫 Связаться со мной
+## 📫 Get in Touch
 
 [![Telegram](https://img.shields.io/badge/Telegram-@BalumbaZX-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/BalumbaZX)
 [![Email](https://img.shields.io/badge/Email-amak04@yandex.ru-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:amak04@yandex.ru)
@@ -251,16 +259,16 @@ Graceful fallback для REPL/ноутбуков. 4 теста.
 
 ---
 
-### 💼 Открыт к предложениям
+### 💼 Open to opportunities
 
 **Python Backend / AI Developer** (Junior+ / Middle)
 
-Удалённо · Гибрид · Релокация
+Remote · Hybrid · Relocation
 
 </div>
 
 ---
 
 <div align="center">
-<sub>⭐ Если мои проекты полезны — поставь звезду!</sub>
+<sub>⭐ If you find my projects useful — give them a star!</sub>
 </div>
