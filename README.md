@@ -211,8 +211,6 @@ Async task queues · REST APIs · AI agents and RAG
 </tr>
 </table>
 
----
-
 ## 🔧 Open Source
 
 <div align="center">
@@ -229,10 +227,15 @@ Async task queues · REST APIs · AI agents and RAG
   MQTT WebSocket transport for publisher and consumer. TLS-enabled WebSocket 
   listener, `wss://` / `ws://` TD forms. 2 e2e tests.
 
-Both merged into `main` and included in the **v0.4.1** release.
+- **[PR #205](https://github.com/hololinked-dev/hololinked/pull/205)** (merged): 
+  MQTT v5 content type from properties in consumer. Safe `getattr` fallback 
+  for paho/aiomqtt. Bumped version to 0.4.2.
+
+Merged into `main`, included in releases **v0.4.1** and **v0.4.2**.
 
 [![PR #191](https://img.shields.io/badge/PR%20%23191-merged-brightgreen?logo=github)](https://github.com/hololinked-dev/hololinked/pull/191)
 [![PR #200](https://img.shields.io/badge/PR%20%23200-merged-brightgreen?logo=github)](https://github.com/hololinked-dev/hololinked/pull/200)
+[![PR #205](https://img.shields.io/badge/PR%20%23205-merged-brightgreen?logo=github)](https://github.com/hololinked-dev/hololinked/pull/205)
 
 </div>
 
